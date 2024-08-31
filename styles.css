@@ -1,0 +1,135 @@
+/* Importing Helvetica font family to CSS file */
+@font-face {
+    font-family: 'Helvetica';
+    src: url('./assets/fonts/Helvetica.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('./assets/fonts/Helvetica-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* -------------------------------- GENERAL STYLES -------------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+*{
+    font-family: 'Helvetica', sans-serif;
+}
+
+section, main, header{
+    min-height: 100vh;
+}
+
+h2{
+    padding-top: 80px;
+    padding-left: 12px;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* -------------------------------- NAV BAR STYLES -------------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+/* When not scrolled */
+
+nav{
+    transition: 800ms;
+}
+
+.logo{
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    transition-duration: 800ms;
+}
+
+.logo:hover{
+    color: white;
+}
+
+.rightNavLink{
+    color: #BBBBBB;
+    font-size: 20px;
+    font-weight: normal;
+    transition-duration: 400ms;
+}
+
+.rightNavLink:hover{
+    color: white;
+}
+
+/* When scrolled */
+
+.scrolledNav{
+    background-color: #FFFFFF;
+}
+
+.scrolledLink:hover{
+    color: black;
+}
+
+.scrolledLogo{
+    color: black;
+}
+
+.scrolledLogo:hover{
+    color: black;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/* -------------------------------- HEADER STYLES --------------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+video{
+    width: 100vw;
+    filter: brightness(60%);
+}
+
+/* -------------------------------------------------------------------------------- */
+/* --------------------------------- FORM STYLES ---------------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+#stnContact{
+    min-height: 85vh;
+}
+
+.emailInputContainer{
+    width: 250px;
+}
+
+.messageInputContainer{
+    min-width: 40vh;
+    width: 80%;
+}
+
+#message{
+    resize: none;
+    height: 400px;
+}
+
+.btnInput{
+    width: 100px;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* -------------------------------- FOOTER STYLES --------------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+footer{
+    min-height: 10vh;
+    background-color: #444444;
+    color: white;
+}
+
+.socialIcon{
+    width: 40px;
+}
+
+.socialIcon:hover{
+    cursor:pointer;
+}

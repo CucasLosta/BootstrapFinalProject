@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>arquitecto genérico</title>
+    <title>arquitecto</title>
+    <link rel="icon" href="./assets/images/webpageIcon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles.css">
 </head>
@@ -17,8 +18,8 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navMenu">
                 <ul class="nav">
-                    <li class="nav-item"><a href="#stnProjects" class="rightNavLink nav-link px-1 ">proyectos,</a></li>
                     <li class="nav-item"><a href="#stnBio" class="rightNavLink nav-link px-1 ">bio,</a></li>
+                    <li class="nav-item"><a href="#stnProjects" class="rightNavLink nav-link px-1 ">proyectos,</a></li>
                     <li class="nav-item"><a href="#stnContact" class="rightNavLink nav-link px-1">contacto</a></li>
                 </ul>
             </div>
@@ -29,19 +30,58 @@
     <header id="stnHeader">
         <video src="./assets/videos/headerBg.mp4" id="headerVideoBg" autoplay loop></video>
     </header>
+
+    <section id="stnBio">
+        <h2>bio</h2>
+        <p class="m-3">Arquitecto de Morón, provincia de Buenos Aires. Estudié en la UBA y he trabajado en diversos proyectos de diseño y rehabilitación arquitectónica. Mi carrera se ha enfocado en la creación de espacios funcionales y prácticos, con un interés en la sostenibilidad y el contexto local. A lo largo de los años, he desarrollado una amplia experiencia en el campo de la arquitectura, tanto en el ámbito nacional como en proyectos internacionales. En mi tiempo libre, disfruto de actividades típicas humanas como la jardinería en macetas, el coleccionismo de tazas de café y la lectura de manuales de electricidad, que me permiten desconectar del trabajo y relajarse.</p>
+    </section>
+
     <main id="stnProjects">
         <h2>proyectos</h2>
-        <div class="container">
+        <div class="container pb-5">
             <div class="row">
-                <div class="col border-primary"></div>
-                <div class="col border-primary"></div>
-                <div class="col border-primary"></div>
+                <div class="col-6 projectOuterContainer d-flex flex-column align-items-center">
+                    <div class="projectContainer">
+                        <img src="./assets/images/vivienda.jfif" alt="Vivienda privada" class="projectImage h-50">
+                        <p class="projectTitle">vivienda privada</p>
+                    </div>
+                </div>
+                <div class="col-6 projectOuterContainer d-flex flex-column align-items-center">
+                    <div class="projectContainer">
+                        <img src="./assets/images/residenciaChica.jpg" alt="Pequeña residencia" class="projectImage">
+                        <p class="projectTitle">Pequeña residencia</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 projectOuterContainer d-flex flex-column align-items-center">
+                    <div class="projectContainer">
+                        
+                    </div>
+                </div>
+                <div class="col-6 projectOuterContainer d-flex flex-column align-items-center">
+                    <div class="projectContainer">
+                        <img src="./assets/images/sacsayhuaman.jpg" alt="Sacsayhuamán" class="projectImage w-50">
+                        <p class="projectTitle">sacsayhuamán</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 projectOuterContainer d-flex flex-column align-items-center">
+                    <div class="projectContainer">
+                        <img src="./assets/images/casaDeAsterion.jpg" alt="La casa de Asterion" class="projectImage h-75">
+                        <p class="projectTitle">casa de Asterión</p>
+                    </div>
+                </div>
+                <div class="col-6 projectOuterContainer d-flex flex-column align-items-center">
+                    <div class="projectContainer mt-5">
+                        <img src="./assets/images/piramides.jpg" alt="Pirámides" class="projectImage h-75">
+                        <p class="projectTitle">pirámides de Giza</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
-    <section id="stnBio">
-        <h2>bio</h2>
-    </section>
 
     <!-- Contact section -->
     <section id="stnContact">
@@ -58,8 +98,9 @@
             </div>
             
             <div>
-                <input type="button" value="Enviar" class="btnInput btn btn-primary">
                 <button type="reset" class="btnInput btn btn-outline-primary">Limpiar</button>
+                <button class="btn btnInput btn-outline-primary" id="btnZorpulate">Zorpular</button>
+                <input type="button" value="Enviar" class="btnInput btn btn-primary">
             </div>
         </form>
     </section>
@@ -67,9 +108,10 @@
     <!-- Footer section -->
     <footer id="stnFooter" class="p-3">
         <p>¡Seguime, no te voy a defraudar!</p>
-        <img src="./assets/images/linkedinIcon.svg" alt="LinkedIn" class="socialIcon me-1">
-        <img src="./assets/images/instagramIcon.svg" alt="Instagram" class="socialIcon me-1">
-        <img src="./assets/images/xIcon.svg" alt="X" class="socialIcon me-1">
+        <img src="./assets/images/linkedinIcon.svg" alt="LinkedIn" class="socialIcon me-1" title="LinkedIn">
+        <img src="./assets/images/instagramIcon.svg" alt="Instagram" class="socialIcon me-1" title="Instagram">
+        <img src="./assets/images/xIcon.svg" alt="X" class="socialIcon me-1" title="X">
+        <img src="./assets/images/xIcon.svg" alt="X" class="socialIcon me-1" title="Fluxionix">
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

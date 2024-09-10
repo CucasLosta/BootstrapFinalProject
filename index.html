@@ -33,52 +33,48 @@
 
     <section id="stnBio">
         <h2>bio</h2>
-        <p class="m-3">Arquitecto de Morón, provincia de Buenos Aires. Estudié en la UBA y he trabajado en diversos proyectos de diseño y rehabilitación arquitectónica. Mi carrera se ha enfocado en la creación de espacios funcionales y prácticos, con un interés en la sostenibilidad y el contexto local. A lo largo de los años, he desarrollado una amplia experiencia en el campo de la arquitectura, tanto en el ámbito nacional como en proyectos internacionales. En mi tiempo libre, disfruto de actividades típicas humanas como la jardinería en macetas, el coleccionismo de tazas de café y la lectura de manuales de electricidad, que me permiten desconectar del trabajo y relajarse.</p>
+        <div class="container">
+            <div class="row">
+                <img src="./assets/images/fadu.jpg" alt="fadu" class="col-md-3">
+                <p class="col-md-9">Arquitecto de Morón, provincia de Buenos Aires. Estudié en la UBA y he trabajado en diversos proyectos de diseño y rehabilitación arquitectónica. Mi carrera se ha enfocado en la creación de espacios funcionales y prácticos, con un interés en la sostenibilidad y el contexto local. A lo largo de los años, he desarrollado una amplia experiencia en el campo de la arquitectura, tanto en el ámbito nacional como en proyectos internacionales. En mi tiempo libre, disfruto de actividades típicas humanas como la jardinería en macetas, el coleccionismo de tazas de café y la lectura de manuales de electricidad, que me permiten desconectar del trabajo y relajarse.</p>
+            </div>
+        </div>
     </section>
 
     <main id="stnProjects">
         <h2>proyectos</h2>
-        <div class="container pb-5">
-            <div class="row">
-                <div class="col-6 projectOuterContainer d-flex flex-column align-items-center">
-                    <div class="projectContainer">
-                        <img src="./assets/images/vivienda.jfif" alt="Vivienda privada" class="projectImage h-50">
+        <div class="d-flex justify-content-center">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="./assets/images/residenciaChica.jpg" class="d-block w-100" alt="residencia chica">
+                        <p class="projectTitle">pequeña residencia</p>
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="./assets/images/vivienda.jpg" class="d-block w-100" alt="vivienda">
                         <p class="projectTitle">vivienda privada</p>
                     </div>
-                </div>
-                <div class="col-6 projectOuterContainer d-flex flex-column align-items-center">
-                    <div class="projectContainer">
-                        <img src="./assets/images/residenciaChica.jpg" alt="Pequeña residencia" class="projectImage">
-                        <p class="projectTitle">Pequeña residencia</p>
+                    <div class="carousel-item">
+                        <img src="./assets/images/casaDeAsterion.jpg" class="d-block w-100" alt="casa de asterión">
+                        <p class="projectTitle">casa de asterión</p>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-6 projectOuterContainer d-flex flex-column align-items-center">
-                    <div class="projectContainer">
-                        
-                    </div>
-                </div>
-                <div class="col-6 projectOuterContainer d-flex flex-column align-items-center">
-                    <div class="projectContainer">
-                        <img src="./assets/images/sacsayhuaman.jpg" alt="Sacsayhuamán" class="projectImage w-50">
+                    <div class="carousel-item">
+                        <img src="./assets/images/sacsayhuaman.jpg" class="d-block w-100" alt="pirámides">
                         <p class="projectTitle">sacsayhuamán</p>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-6 projectOuterContainer d-flex flex-column align-items-center">
-                    <div class="projectContainer">
-                        <img src="./assets/images/casaDeAsterion.jpg" alt="La casa de Asterion" class="projectImage h-75">
-                        <p class="projectTitle">casa de Asterión</p>
+                    <div class="carousel-item">
+                        <img src="./assets/images/piramides.jpg" class="d-block w-100" alt="pirámides">
+                        <p class="projectTitle">pirámides de giza</p>
                     </div>
                 </div>
-                <div class="col-6 projectOuterContainer d-flex flex-column align-items-center">
-                    <div class="projectContainer mt-5">
-                        <img src="./assets/images/piramides.jpg" alt="Pirámides" class="projectImage h-75">
-                        <p class="projectTitle">pirámides de Giza</p>
-                    </div>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
     </main>
@@ -99,15 +95,34 @@
             
             <div>
                 <button type="reset" class="btnInput btn btn-outline-primary">Limpiar</button>
-                <button class="btn btnInput btn-outline-primary" id="btnZorpulate">Zorpular</button>
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Zorpular
+                </button>
                 <input type="button" value="Enviar" class="btnInput btn btn-primary">
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Alerta</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          Para zorpular necesita tener el plenixo activado
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
         </form>
     </section>
 
     <!-- Footer section -->
     <footer id="stnFooter" class="p-3">
-        <p>¡Seguime, no te voy a defraudar!</p>
+        <p>Seguime en redes</p>
         
         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-linkedin socialIcon mx-2" viewBox="0 0 16 16">
             <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
@@ -121,7 +136,7 @@
             <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
         </svg>
         
-        <img src="./assets/images/xIcon.svg" alt="X" class="socialIcon me-1" title="Fluxionix">
+        <img src="./assets/images/logoFluxionix.svg" alt="X" class="socialIcon me-1" title="Fluxionix">
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

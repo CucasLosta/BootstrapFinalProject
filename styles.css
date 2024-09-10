@@ -86,7 +86,9 @@ nav{
 /* -------------------------------------------------------------------------------- */
 
 video{
-    width: 100vw;
+    max-width: 1920px;
+    min-width: 100vw;
+    min-height: 100vh;
     filter: brightness(60%);
 }
 
@@ -103,6 +105,9 @@ video{
     font-size: 20px;
 }
 
+#carrouselExample{
+    width: 100%;
+}
 
 /* -------------------------------------------------------------------------------- */
 /* --------------------------------- FORM STYLES ---------------------------------- */
@@ -146,4 +151,10 @@ footer{
 
 .socialIcon:hover{
     cursor:pointer;
+}
+
+@media (min-width: 768px) {
+    #carouselExample{
+        width: 50%;
+    }
 }
